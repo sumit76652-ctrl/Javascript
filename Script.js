@@ -18,7 +18,7 @@
 
 // filter method me hame value milti hai
 
-const myNums = [1,2,3,4,5,6,7,8,9,10];
+// const myNums = [1,2,3,4,5,6,7,8,9,10];
 
 // this is implicit return.. in implicit return me hame return keyword use nhi krna padega
 // const newNum = myNums.filter( (num) => num > 5 )
@@ -65,8 +65,65 @@ const myNums = [1,2,3,4,5,6,7,8,9,10];
 //  const userBooks = books.filter( (bk) => bk.genre === 'History')
 
 
-const userBooks = books.filter( (bk) => {
-    return bk.genre === 'History' && bk.publish >= 1995 && bk.edition >= 2005 
-})
- console.log(userBooks);
- 
+// const userBooks = books.filter( (bk) => {
+//     return bk.genre === 'History' && bk.publish >= 1995 && bk.edition >= 2005 
+// })
+//  console.log(userBooks);
+
+// const myNumers = [1,2,3,4,5,6,7,8,9]
+
+// const newNumns = myNumers.map( (num) => num + 10 )
+
+// chaining of method.....\
+
+// const newNums = myNumers
+//                 .map((num) => num * 10)
+//                 .map((num) => num + 1)
+//                 .filter((num) => num >=40)
+// console.log(newNums);
+
+// Reduce method ..............
+
+// normal functionn..................
+
+const mynums = [1, 2, 3]
+
+// const myTotal = mynums.reduce(function (acc, curval) {
+//     console.log(`acc : ${acc} and curval : {curval}`);
+//     return acc + curval;
+    
+// }, 0)
+
+//  // here 0 initial val of acc
+
+//  console.log(myTotal);
+
+//reduce using arrow function ....................
+
+const myTotal = mynums.reduce( (acc, curr) => acc+curr, 0)
+
+// console.log(myTotal);
+
+ const shoppingCart = [
+    {
+        itemName: "java script",
+        price:299
+    },
+    {
+        itemName: "python",
+        price:999
+    },
+    {
+        itemName: "java ",
+        price:1099
+    },
+    {
+        itemName:"mobile development",
+        price:5999
+    }
+ ]
+
+const price = shoppingCart.reduce( (acc, item) => acc+item.price, 0)
+
+// console.log(price);
+
