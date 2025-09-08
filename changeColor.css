@@ -1,0 +1,44 @@
+body {
+    background-color: #414141;
+}
+
+h1 {
+    color: white;
+}
+
+.cont {
+    background-color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: 5px;
+    
+}
+
+#home {
+    height: 35px;
+    width: 75px;
+     /* margin: 4px; */
+    
+
+}
+
+#youtube {
+    height: 35px;
+    width: 135px;
+}
+
+#start{
+    height: 35px;
+    width: 75px;
+    border-radius: 10%;
+}
+
+#stop{
+    height: 35px;
+    width: 75px;
+    border-radius: 10%;
+
+}
